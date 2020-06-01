@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jxb:bindings version="1.0"
+              xmlns:jxb="http://java.sun.com/xml/ns/jaxb"
+              xmlns:xs="http://www.w3.org/2001/XMLSchema"
+              xmlns:xjc="http://java.sun.com/xml/ns/jaxb/xjc">
+       
+  	<jxb:bindings schemaLocation="pain.008.002.02.xsd" node="/xs:schema">  
+ 
+        <jxb:globalBindings localScoping="toplevel">
+	        <xjc:simple/> <!-- It create @XmlRootElement annotation-->       
+            <xjc:superClass name="com.example.supertype.MyAbstractBaseType"/>         
+            <jxb:serializable/>
+        </jxb:globalBindings>
+                           
+        <jxb:schemaBindings>
+            <jxb:package name="com.example.model"></jxb:package>  
+        </jxb:schemaBindings>           
+          
+    </jxb:bindings>
+  
+</jxb:bindings>
