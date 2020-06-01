@@ -7,8 +7,7 @@
   	<jxb:bindings schemaLocation="pain.008.002.02.xsd" node="/xs:schema">  
  
         <jxb:globalBindings localScoping="toplevel">
-	        <xjc:simple/> <!-- It create @XmlRootElement annotation-->       
-            <xjc:superClass name="com.example.supertype.MyAbstractBaseType"/>         
+	        <xjc:simple/> <!-- It create @XmlRootElement annotation-->     
             <jxb:serializable/>
         </jxb:globalBindings>
                            
